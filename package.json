@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx webpack --watch --mode development & npx nodemon --watch ./server ./server/index.js",
+    "dev": "npx webpack --watch --mode development & npx nodemon --watch ./server ./server/index.js & npx postcss client/src/styles.css -o client/dist/styles.css --watch",
     "build": "npx webpack --mode production",
     "start": "node ./server/index.js",
     "build:css": "postcss client/src/styles.css -o client/dist/styles.css"
