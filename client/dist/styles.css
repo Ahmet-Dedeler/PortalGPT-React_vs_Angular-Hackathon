@@ -485,14 +485,38 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
 .flex {
   display: flex;
 }
+.h-full {
+  height: 100%;
+}
 .h-screen {
   height: 100vh;
+}
+.w-full {
+  width: 100%;
+}
+.resize {
+  resize: both;
 }
 .flex-col {
   flex-direction: column;
@@ -505,6 +529,10 @@ video {
 }
 .rounded {
   border-radius: 0.25rem;
+}
+.bg-\[\#ebebeb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 235 235 / var(--tw-bg-opacity));
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;
