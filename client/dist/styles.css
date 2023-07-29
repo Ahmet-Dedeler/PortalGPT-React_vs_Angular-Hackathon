@@ -526,9 +526,6 @@ video {
 .mr-4 {
   margin-right: 1rem;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
 .flex {
   display: flex;
 }
@@ -690,21 +687,13 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-5xl {
-  font-size: 3rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
