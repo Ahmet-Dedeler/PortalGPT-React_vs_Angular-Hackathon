@@ -30,7 +30,7 @@ app.post('/message', async (req, res) => {
     const chatCompletion = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [
-        { role: "system", content: "You are an AI mental health chatbot." },
+        { role: "system", content: "You are a help AI that can assume different roles" },
         { role: "user", content: userMessage },
       ],
     });
