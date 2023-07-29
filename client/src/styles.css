@@ -2,6 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.panel {
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
 
 .homebackground {
   background-color: #6c6c5c;
