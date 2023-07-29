@@ -3,7 +3,6 @@ import '../styles.css';
 
 
 export default function Home({ setPage, canvasRef, setChat }) {
-  console.log(setChat)
 
   return (
     <div className="flex flex-col items-center justify-center h-screen homebackground">
