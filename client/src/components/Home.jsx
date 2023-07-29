@@ -6,10 +6,10 @@ export default function Home({ setPage, canvasRef, setChat }) {
   console.log(setChat)
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#97978f]">
+    <div className="flex flex-col items-center justify-center h-screen homebackground">
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0">
       </canvas>
-      <div className="mb-8 text-5xl font-bold text-gray-300 z-10 font-serif">
+      <div className="mb-8 text-6xl font-bold text-gray-300 z-10 font-serif">
         Portal GPT
       </div>
       <div className="gap-5 grid">
