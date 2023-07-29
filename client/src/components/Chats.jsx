@@ -45,15 +45,16 @@ export default function Chats({ setPage }) {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className=" w-full mb-3 h-1/5 shadow-lg p-5">
+      <div className=" w-full mb-3 h-1/5 shadow-lg p-5 panel">
         <button onClick={(e) => {
           setPage('Home');
         }}
-          className="mb-5 ml-5 left-10 h-full aspect-square rounded-full z-10 shadow-lg">
+          className="mb-5 ml-5 left-10 h-full aspect-square rounded-full z-10 shadow-lg bg-white">
           Home
         </button>
       </div>
-      <div className="h-4/6 w-4/6 flex flex-col items-center p-2 max-w-[760px]">
+      <div className="h-4/6 w-full flex flex-col items-center">
+      <div className="h-full w-4/6 flex flex-col items-center p-2 max-w-[760px] min-w-[400px]">
         <Messages messages={messages} />
         <form className="h-16 w-5/6 flex flex-row items-center" onSubmit={submit}>
           <input className="h-3/4 w-5/6 border-black border-solid border-2 mr-4 rounded-lg input" >
@@ -62,6 +63,7 @@ export default function Chats({ setPage }) {
             Talk
           </button>
         </form>
+      </div>
       </div>
     </div>
   )
