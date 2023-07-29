@@ -529,6 +529,9 @@ video {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -599,6 +602,9 @@ video {
 .justify-center {
   justify-content: center;
 }
+.gap-5 {
+  gap: 1.25rem;
+}
 .place-self-end {
   place-self: end;
 }
@@ -634,9 +640,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(151 151 143 / var(--tw-bg-opacity));
 }
-.bg-\[\#e1e2e6\] {
+.bg-\[\#e0e0b7\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(225 226 230 / var(--tw-bg-opacity));
+  background-color: rgb(224 224 183 / var(--tw-bg-opacity));
 }
 .bg-\[\#ebebeb\] {
   --tw-bg-opacity: 1;
@@ -668,38 +674,57 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .font-bold {
   font-weight: 700;
 }
-.text-blue-500 {
+.text-\[\#30302d\] {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(48 48 45 / var(--tw-text-opacity));
 }
-.text-white {
+.text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -709,6 +734,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+
 .panel {
   background-color: #ebebeb;
   background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
@@ -717,4 +743,5 @@ video {
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+
 }

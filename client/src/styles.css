@@ -5,4 +5,9 @@
 .panel {
   background-color: #ebebeb;
   background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+
+.homebackground {
+  background-color: #6c6c5c;
+  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+  background-size: 2%; /* You can adjust these values */
 }
