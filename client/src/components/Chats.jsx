@@ -6,13 +6,11 @@ export default function Chats({ setPage }) {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="w-full h-1/5 bg-gradient-to-r from-sky-500">
-      </div>
-      <div className=" w-full mb-3 bg-gradient-to-r from-sky-500">
+      <div className=" w-full mb-3 h-1/5 shadow-lg">
         <button onClick={(e) => {
           setPage('Home');
         }}
-        className="bg-white mb-5 left-10 h-full w-1/6 rounded-md z-10">
+        className="mb-5 ml-5 left-10 h-full aspect-square rounded-full z-10 shadow-lg">
           Home
         </button>
       </div>
@@ -21,7 +19,7 @@ export default function Chats({ setPage }) {
           <div className="h-16 w-5/6 flex flex-row items-center">
             <input className="h-3/4 w-5/6 border-black border-solid border-2 mr-4 rounded-lg">
             </input>
-            <button className="h-3/4 w-1/6 border-black border-solid border-2 rounded-lg">
+            <button className="h-3/4 w-1/6 rounded-lg bg-[#97978f]">
               Talk
             </button>
           </div>
