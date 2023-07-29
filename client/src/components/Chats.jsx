@@ -3,7 +3,7 @@ import '../styles.css';
 import Messages from './Messages.jsx'
 import axios from 'axios';
 
-const url = '/message'
+const url = 'http://127.0.0.1/message'
 var msgCount = 0;
 
 export default function Chats({ setPage, chat }) {
