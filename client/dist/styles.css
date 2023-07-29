@@ -593,6 +593,9 @@ video {
 .w-auto {
   width: auto;
 }
+.max-w-\[760px\] {
+  max-width: 760px;
+}
 .resize {
   resize: both;
 }
@@ -716,6 +719,9 @@ video {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .px-2 {
   padding-left: 0.5rem;
