@@ -54,7 +54,7 @@ export default function Messages() {
   ];
 
   return (
-    <div className="h-5/6 w-5/6 border-black border-solid border-2 mb-3 rounded-md px-5 py-2 overflow-scroll flex flex-col-reverse overflow-x-hidden">
+    <div className="h-5/6 w-5/6 mb-3 rounded-md px-5 py-2 overflow-scroll flex flex-col-reverse overflow-x-hidden bg-gradient-to-b from-gray-200 shadow-lg">
       {
         exampleMessages.map((message) => <Message key={message.id} user={message.user} date={message.date} message={message.message} />)
       }
