@@ -5,6 +5,7 @@ const particlesArray = [];
 
 export default function App() {
   const [page, setPage] = useState('Home');
+  const [chat, setChat] = useState('');
   const canvasRef = useRef(null);
 
   const mouse = {
@@ -96,8 +97,8 @@ export default function App() {
   return (
     <div id="App">
       <div>
-        {(page === 'Home') && (<Home setPage={(e) => { setPage(e); }} canvasRef={canvasRef} />)}
-        {(page === 'Chats') && (<Chats setPage={(e) => { setPage(e); }} />)}
+        {(page === 'Home') && (<Home setPage={(e) => { setPage(e)}} setChat = {(e) => {setChat(e)}}  canvasRef={canvasRef} />)}
+        {(page === 'Chats') && (<Chats setPage={(e) => { setPage(e); }} chat = {chat} />)}
       </div>
     </div>
   );

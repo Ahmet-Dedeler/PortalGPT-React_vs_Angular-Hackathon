@@ -2,21 +2,46 @@ import React, { useState } from 'react';
 import '../styles.css';
 
 
-export default function Home({ setPage, canvasRef }) {
+export default function Home({ setPage, canvasRef, setChat }) {
+  console.log(setChat)
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#ebebeb]">
+    <div className="flex flex-col items-center justify-center h-screen homebackground">
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0">
       </canvas>
-      <div className="mb-8 text-2xl font-bold text-blue-500 z-10">
-        This is Home
+      <div className="mb-8 text-6xl font-bold text-gray-300 z-10 font-serif">
+        Portal GPT
       </div>
-      <button onClick={() => {
-        setPage('Chats');
-      }}
-        className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700 z-10">
-        click to chat
-      </button>
+      <div className="gap-5 grid">
+        <button onClick={() => {
+          setPage('Chats');
+          setChat('Chef');
+        }}
+          className="px-6 py-3 text-[#30302d]  bg-[#e0e0b7] rounded hover:bg-[#abab8c] z-10 text-2xl font-serif">
+          Chef AI
+        </button>
+        <button onClick={() => {
+          setPage('Chats');
+          setChat('Mental Health');
+        }}
+          className="px-6 py-3 text-[#30302d]  bg-[#e0e0b7] rounded hover:bg-[#abab8c] z-10 text-2xl font-serif">
+          Mental Health AI
+        </button>
+        <button onClick={() => {
+          setPage('Chats');
+          setChat('Study help');
+        }}
+          className="px-6 py-3 text-[#30302d]  bg-[#e0e0b7] rounded hover:bg-[#abab8c] z-10 text-2xl font-serif">
+          Study AI
+        </button>
+        <button onClick={() => {
+          setPage('Chats');
+          setChat('Career Coach');
+        }}
+          className="px-6 py-3 text-[#30302d]  bg-[#e0e0b7] rounded hover:bg-[#abab8c] z-10 text-2xl font-serif">
+          Career Coach
+        </button>
+      </div>
     </div>
   )
 };
