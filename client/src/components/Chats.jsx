@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles.css';
 import Messages from './Messages.jsx'
 import axios from 'axios';
@@ -6,7 +6,23 @@ import axios from 'axios';
 const url = 'http://localhost:3000/message'
 var msgCount = 0;
 
-export default function Chats({ setPage }) {
+export default function Chats({ setPage, chat }) {
+  console.log(chat)
+  useEffect(() => {
+    axios.post(url, {
+      text: `introduce yourself as a ${chat} ai helper with a max of 100 words`
+    })
+    .then((res) => {
+      const introMsg = {
+        id: msgCount++,
+        user: 'chatbot',
+        date: new Date().toLocaleString(),
+        message: res.data.content
+      }
+      setMessages(prevMessages => [introMsg, ...prevMessages]);
+    }
+    )
+  }, [])
 
   const [messages, setMessages] = useState([]);
   const submit = (e) => {
@@ -29,7 +45,6 @@ export default function Chats({ setPage }) {
       text: input
     })
       .then((res) => {
-        console.log(res.data.content)
         const botMsg = {
           id: msgCount++,
           user: 'chatbot',
