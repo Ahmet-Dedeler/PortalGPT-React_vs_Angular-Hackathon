@@ -1,6 +1,6 @@
 # PortalGPT | HackBattle: React vs Angular
 
-<img align = "right" src="![ezgif-1-6ab9a72a7b](https://github.com/MLH-JUL-28-JUL-30/HackBattle/assets/111204640/fbcf9fe6-ce6c-4767-b29b-d5756c311eba)
+<img align = "right" src="https://github.com/MLH-JUL-28-JUL-30/HackBattle/assets/111204640/fbcf9fe6-ce6c-4767-b29b-d5756c311eba
 " alt="GIF" width="500px">
 
 ## Inspiration 🌟
