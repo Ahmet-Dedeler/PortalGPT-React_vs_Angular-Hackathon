@@ -1,5 +1,8 @@
 # PortalGPT | HackBattle: React vs Angular
 
+<img align = "right" src="![ezgif-1-6ab9a72a7b](https://github.com/MLH-JUL-28-JUL-30/HackBattle/assets/111204640/fbcf9fe6-ce6c-4767-b29b-d5756c311eba)
+" alt="GIF" width="500px">
+
 ## Inspiration 🌟
 Inspired by ChatGPT's potential to offer mentorship and support, **PortalGPT** is a web application designed to connect users with highly trained AI experts in their respective roles. The platform serves as a gateway for users to seek answers to their queries, tailored to their specific needs.
 
